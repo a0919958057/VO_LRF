@@ -1,0 +1,36 @@
+extended                   2
+hessian_threshold	   2000
+octaves                    2
+octave_layers              2
+hessian_error		   50
+minimum_hessian_threshold  500
+maximum_hessian_threshold  40000
+minimum_Search_Window_Size 15
+maximum_Search_Window_Size 55
+add_window_size		   51
+bino_d_match_threshold	   0.2
+original_d_match_threshold 0.2
+current_d_match_threshold  0.25
+absolute_d_match_threshold 0.1
+similar_threshold	      0.0
+erase_times                10
+erase_ratio                0.7
+max_on_image_num	   10
+
+Map_Covariance_Predict     1
+minimum_distance           1
+maximum_distance           5
+Initial_State_Covariance   0.0025
+Sigma_wv		   0.003
+Sigma_ww		   0.01
+Sigma_v			   1
+
+
+
+scale                      50
+show_image_num             1
+show_map_num               0
+show_feature_region        0
+show_Search_Window_Size    1
+show_all_feature           0
+txt                        1

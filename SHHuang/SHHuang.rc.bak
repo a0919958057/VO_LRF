@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文 (繁體，台灣) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\SHHuang.rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+    "#include ""l.CHT\\afxres.rc""      // 標準元件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SHHuang.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 SHHuang"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "SHHuang, 1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "確定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SHHuang_DIALOG DIALOGEX 0, 0, 767, 446
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SHHuang"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "啟動",IDC_L_InitialCCD,10,30,31,14
+    PUSHBUTTON      "設定",IDC_L_OptionCCD,51,31,30,14
+    GROUPBOX        "左攝影機",IDC_STATIC,8,7,121,40
+    GROUPBOX        "右攝影機",IDC_STATIC,140,7,126,41
+    COMBOBOX        IDC_L_SelectCamera,13,16,112,16,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_R_SelectCamera,144,16,118,14,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "設定",IDC_R_OptionCCD,184,31,29,15
+    PUSHBUTTON      "啟動",IDC_R_InitialCCD,146,31,29,14
+    PUSHBUTTON      "關閉",IDC_L_CloseCCD,92,30,28,15,WS_GROUP
+    PUSHBUTTON      "關閉",IDC_R_CloseCCD,222,31,31,15
+    CONTROL         "",IDC_L_Image_Live,"Static",SS_BLACKFRAME,7,52,21,21
+    CONTROL         "",IDC_R_Image_Live,"Static",SS_BLACKFRAME,168,53,26,24
+    CONTROL         "",IDC_L_Image_SURF,"Static",SS_BLACKFRAME,7,225,25,25
+    CONTROL         "",IDC_R_Image_SURF,"Static",SS_BLACKFRAME,180,225,27,28
+    GROUPBOX        "模式",IDC_STATIC,386,7,130,35
+    CONTROL         "讀圖模式",IDC_LoadImage_Mode,"Button",BS_AUTORADIOBUTTON | WS_GROUP,391,14,41,10
+    CONTROL         "線上模式",IDC_OnLine_Mode,"Button",BS_AUTORADIOBUTTON,432,14,37,10
+    CONTROL         "儲存圖片",IDC_SaveImage_Mode,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,476,15,42,10
+    LTEXT           "取樣時間",IDC_STATIC,394,30,31,11
+    EDITTEXT        IDC_SampleTime,424,29,32,15,ES_AUTOHSCROLL
+    LTEXT           "sec",IDC_STATIC,458,31,19,11
+    LTEXT           "Hz",IDC_STATIC,496,30,15,12
+    EDITTEXT        IDC_Frequency,474,29,21,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "開始",IDC_Start,392,53,22,13
+    PUSHBUTTON      "暫停",IDC_Pause,440,53,22,13
+    PUSHBUTTON      "停止",IDC_Stop,416,53,22,13
+    PUSHBUTTON      "繼續",IDC_Continue,464,53,22,13
+    CONTROL         "",IDC_Image_PhotoCount,"Static",SS_BLACKFRAME,391,88,25,12
+    CONTROL         "",IDC_Map,"Static",SS_ETCHEDFRAME,391,123,330,298
+    LTEXT           "影像地標",IDC_STATIC,422,112,28,8
+    LTEXT           "地圖地標",IDC_STATIC,391,112,28,8
+    LTEXT           "hessian值",IDC_STATIC,454,112,30,8
+    LTEXT           "總時間",IDC_STATIC,545,18,22,8
+    LTEXT           "Hz",IDC_STATIC,663,19,8,8
+    LTEXT           "截圖",IDC_STATIC,546,32,15,8
+    LTEXT           "存讀圖",IDC_STATIC,593,32,22,8
+    LTEXT           "繪圖",IDC_STATIC,645,32,15,8
+    LTEXT           "X (cm)",IDC_STATIC,543,58,25,8
+    LTEXT           "Y (cm)",IDC_STATIC,594,58,24,8
+    LTEXT           "Z (cm)",IDC_STATIC,644,58,24,8
+    LTEXT           "角度X (度)",IDC_STATIC,540,84,34,8
+    LTEXT           "角度Y (度)",IDC_STATIC,590,84,34,8
+    LTEXT           "角度Z (度)",IDC_STATIC,640,84,34,8
+    EDITTEXT        IDC_Time1,572,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Frequency2,618,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time2,537,43,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time3,586,43,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time4,635,43,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time8,537,68,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time9,586,68,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time10,635,68,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time5,537,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time6,586,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Time7,635,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_p3dx_dis,273,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_p3dx_vel,317,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "距離mm",IDC_STATIC,275,7,26,8
+    LTEXT           "速度mm/s",IDC_STATIC,319,7,32,8
+    PUSHBUTTON      "run",IDC_BUTTON1,274,33,32,13
+    PUSHBUTTON      "I90連線",IDC_BUTTON_connect_I90,358,17,28,13
+    PUSHBUTTON      "stop",IDC_BUTTON3,359,34,28,14
+    PUSHBUTTON      "turn",IDC_BUTTON4,314,33,32,13
+    PUSHBUTTON      "讀取地標點",IDC_BUTTON_ReadFeature,488,53,39,13
+    PUSHBUTTON      "+",IDC_BUTTON_big,473,85,14,14
+    PUSHBUTTON      "-",IDC_BUTTON_small,489,85,14,14
+    PUSHBUTTON      "上",IDC_BUTTON_UP,446,80,12,11
+    PUSHBUTTON      "下",IDC_BUTTON_DOWN,446,93,12,11
+    PUSHBUTTON      "左",IDC_BUTTON_LEFT,432,86,12,11
+    PUSHBUTTON      "右",IDC_BUTTON_RIGHT,460,86,12,11
+    PUSHBUTTON      "Reset",IDC_BUTTON_Reset,505,85,23,14
+    PUSHBUTTON      "Connect",IDC_SOCKET_CONNECT,7,425,50,14
+    CONTROL         "",IDC_SOCKET_IP,"SysIPAddress32",WS_TABSTOP,61,425,100,14
+    EDITTEXT        IDC_SOCKET_PORT,163,425,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_SOCKET_LOG,205,398,162,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040403b6"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名稱>"
+            VALUE "FileDescription", "TODO: <檔案說明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SHHuang.exe"
+            VALUE "LegalCopyright", "TODO: (c) <公司名稱>.  All rights reserved."
+            VALUE "OriginalFilename", "SHHuang.exe"
+            VALUE "ProductName", "TODO: <產品名稱>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 950
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SHHuang_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 760
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 439
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SHHuang_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDD_SHHuang_DIALOG      "關於 SHHuang(&A)..."
+END
+
+#endif    // 中文 (繁體，台灣) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+#include "res\SHHuang.rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "l.CHT\afxres.rc"      // 標準元件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
